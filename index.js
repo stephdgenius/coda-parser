@@ -19,8 +19,8 @@ app.get("/", function(req, res) {
 
 app.get("/authcallback", (req, res) => {
 	const auth_response = {
-		code: request.params.code,
-		location: request.params.location
+		code: req.params.code,
+		location: req.params.location
 	};
 	console.log("Auth response: ", aut_response);
 	res.render("authcallback");
