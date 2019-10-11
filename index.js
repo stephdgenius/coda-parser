@@ -20,9 +20,9 @@ app.get("/", function(req, res) {
 app.get("/authcallback", (req, res) => {
 	const aut_response = {
 		code: request.params.code,
-		location: us
+		location: request.params.location
 	};
-	req.response.send();
+	req.response.send(aut_response);
 });
 
 app.listen(port, function() {
