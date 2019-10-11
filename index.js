@@ -18,11 +18,7 @@ app.get("/", function(req, res) {
 });
 
 app.get("/authcallback", (req, res) => {
-	const app_details = {
-		app_name: "Afrologix Coda parser",
-		auth: true
-	};
-	res.json(app_details);
+	req.response.send(request.params.code);
 });
 
 app.listen(port, function() {
