@@ -22,7 +22,7 @@ app.get("/authcallback", (req, res) => {
 		code: req.params.code,
 		location: req.params.location
 	};
-	console.log("Auth response: ", aut_response);
+	console.log("Auth response: ", auth_response);
 	res.render("authcallback");
 });
 
