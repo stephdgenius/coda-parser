@@ -1,0 +1,27 @@
+{
+  "name": "coda-parser",
+  "version": "0.1.0",
+  "description": "API for parse coda file and return JSON",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stephdgenius/coda-parser.git"
+  },
+  "keywords": [
+    "coda",
+    "paser",
+    "json"
+  ],
+  "author": "Steph DGenius",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stephdgenius/coda-parser/issues"
+  },
+  "homepage": "https://github.com/stephdgenius/coda-parser#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
