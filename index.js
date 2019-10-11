@@ -18,11 +18,12 @@ app.get("/", function(req, res) {
 });
 
 app.get("/authcallback", (req, res) => {
-	const aut_response = {
+	const auth_response = {
 		code: request.params.code,
 		location: request.params.location
 	};
-	req.response.send(aut_response);
+	console.log("Auth response: ", aut_response);
+	res.render("authcallback");
 });
 
 app.listen(port, function() {
